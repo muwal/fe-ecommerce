@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Navigate, BrowserRouter }
 
 import Auth from "./components/auth.components";
 import Register from './pages/register.pages';
+import Home from './pages/home.pages';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
                 <Routes>
                     <Route path="/register" element={<Auth />} />
                     <Route path="/login" element={<Auth />} />
+                    <Route path="/home" element={<Home />} />
                     <Route exact path='/' element={<Navigate to="/login" />} />
                 </Routes>
             </BrowserRouter>
